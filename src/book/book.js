@@ -60,7 +60,8 @@ class Book extends React.Component {
             })
         }
         else {
-            fetch('https://www.googleapis.com/books/v1/volumes?q=' + this.state.searchInput + '&startIndex=0&maxResults=40&key=AIzaSyBkMp2Bcn67MaJ6sBL2BOCagCKpWWbhUAY', {
+            // var apiKey = '';
+            fetch('https://www.googleapis.com/books/v1/volumes?q=' + this.state.searchInput + '&startIndex=0&maxResults=40&key=' + apiKey, {
                 headers: {
                     "Content-Type" : "text/plain",
                 } 
