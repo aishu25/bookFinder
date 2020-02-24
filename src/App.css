@@ -1,0 +1,38 @@
+body, html{
+  height:100%
+}
+
+.App {
+  text-align: center;
+  /* background: #EFEFBB;
+  background: -webkit-linear-gradient(to right, #88cc00, #4ddbff);
+  background: linear-gradient(to right, #88cc00, #4ddbff); */
+  padding:20px;
+  /* width: 100vw; */
+  height: 100%;
+  /* background-image: url('./books.jpg'); */
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
